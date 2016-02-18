@@ -1,0 +1,11 @@
+with "vulkan.gpr";
+project Vulkan.Test is
+
+   for Source_Dirs use ("test/**");
+   for Object_Dir use ".obj/" & project'name;
+   for main use ("vulkan-test-main.adb");
+   package Compiler is
+      for Default_Switches ("ada") use ("-gnatwa", "-gnatQ", "-gnat12");
+   end Compiler;
+
+end Vulkan.Test;

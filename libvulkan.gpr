@@ -1,0 +1,5 @@
+project Libvulkan is
+        for Languages use ("C");
+        for externally_built use "True";
+        for Source_Dirs use ("../Vulkan-Docs/src/vulkan/");
+end Libvulkan;
