@@ -1,12 +1,22 @@
 library project Vulkan is
 
-   for Source_Dirs use ("src/**");
+   for Languages use ("Ada","sed","Makefile","Text");
+   for Source_Dirs use (".", "src/**");
    for Object_Dir use ".obj/" & project'name;
    for library_name use "a-vulkan";
    for Library_dir use "lib";
 
    package Compiler is
+      for Driver("Makefile") use "";
+      for Driver("sed") use "";
+      for Driver("Text") use "";
       for Default_Switches ("ada") use ("-gnatwa", "-gnatQ", "-gnat12");
    end Compiler;
 
+   Package Naming is
+      For Implementation_Suffix("sed") use ".sed";
+      For Implementation_Suffix("Text") use ".md";
+      For Implementation_Suffix("Makefile") use ".mk";
+      for Implementation_Exceptions("Makefile") use ("Makefile");
+   end Naming;
 end Vulkan;
