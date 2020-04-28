@@ -1,3 +1,3 @@
 package Vulkan is
 
-end vulkan;
+end Vulkan;
