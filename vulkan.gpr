@@ -19,4 +19,8 @@ library project Vulkan is
       for Implementation_Suffix ("Makefile") use ".mk";
       for Implementation_Exceptions ("Makefile") use ("Makefile");
    end Naming;
+
+   package Linker is
+      for Linker_Options use ("-lvulkan");
+   end Linker;
 end Vulkan;
