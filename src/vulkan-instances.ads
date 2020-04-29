@@ -1,8 +1,10 @@
 private with System.Storage_Elements;
 private with Ada.Finalization;
 package Vulkan.Instances is
+
    type InstanceCreateInfo is tagged limited private;
    type AllocationCallbacks is tagged limited private;
+
    type Instance (CreateInfo : not null access constant InstanceCreateInfo;
                   Allocator  : not null access constant AllocationCallbacks) is tagged limited private;
 

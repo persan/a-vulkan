@@ -5,3 +5,5 @@ An initial binding to the khronos vulkan specs.
 * vulkan-loader-1.2.131.1-1.fc31.x86_64
 * vulkan-loader-devel-1.2.131.1-1.fc31.x86_64
 
+# Current status
+Automatic generation of all low level bindings compleate.
