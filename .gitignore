@@ -12,3 +12,5 @@ gnatinspect.db
 messages.txt
 *.a
 *.lexch
+a.out
+x.*
